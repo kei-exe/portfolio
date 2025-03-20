@@ -1,0 +1,304 @@
+/* Global Styles */
+body {
+    font-family: Garamond, sans-serif; /* Set the font family for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #2b2b2b; /* Dark background color for the body */
+    color: #d3d3d3; /* Light text color for readability */
+}
+
+header {
+    background-color: #3a3a3a; /* Darker background color for the header */
+    color: #d3d3d3; /* Light text color */
+    text-align: center; /* Center-align text in the header */
+    padding: 1em 0; /* Padding for top and bottom of the header */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Set font size for the main heading */
+}
+
+header hr {
+    border: 0; /* Remove default border */
+    border-top: 1vh solid #555; /* Slightly lighter horizontal line */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+footer {
+    text-align: center; /* Center-align text in the footer */
+    background-color: #3a3a3a; /* Darker background color for the footer */
+    color: #d3d3d3; /* Light text color */
+}
+
+section {
+    padding: 2em; /* Padding for the section */
+    background-color: #2b2b2b; /* Match body background */
+}
+
+/* Typography */
+h1, h2 {
+    color: #9acd32; /* Greenish color for headings */
+}
+
+p {
+    color: #d3d3d3; /* Light text color for paragraphs */
+}
+
+/* Top Navigation */
+.topnav {
+    display: flex; /* Flexbox layout for the navigation */
+    flex-direction: row; /* Horizontal layout */
+    justify-content: center; /* Center-align navigation items */
+    background-color: #3a3a3a; /* Darker background color for the navigation */
+}
+
+.topnav a {
+    color: #d3d3d3; /* Light text color for links */
+    text-align: center; /* Center-align text in the links */
+    padding: 1em 2em; /* Padding for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1em; /* Set font size for links */
+}
+
+.topnav a:hover {
+    background-color: #555; /* Slightly lighter background color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.topnav a.active {
+    background-color: #9acd32; /* Greenish background color for the active link */
+    color: white; /* White text color for the active link */
+}
+
+/* Home Page */
+.intro-section {
+    text-align: center; /* Center-align text in the introduction section */
+}
+
+.intro-content {
+    display: inline-block; /* Inline-block layout for the content */
+    text-align: left; /* Left-align text in the content */
+    max-width: 30%; /* Maximum width for the content */
+    margin: 0 auto; /* Center the content */
+    padding: 1em; /* Padding for the content */
+    border-radius: 1em; /* Rounded corners */
+    background-color: #3a3a3a; /* Darker background color for the content */
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.1); /* Box shadow for the content */
+}
+
+.intro-img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1em; /* Margin at the top */
+    border-radius: 1em; /* Rounded corners */
+}
+
+.intro-content a {
+    color: #9acd32; /* Greenish color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* About Me Page */
+.about-section {
+    max-width: 100%; /* Maximum width for the section */
+    margin: 0 auto; /* Center the section */
+    padding: 1em; /* Padding for the section */
+    text-align: left; /* Left-align text in the section */
+}
+
+.about-content {
+    display: flex; /* Flexbox layout for the content */
+    flex-flow: wrap; /* Wrap items to the next line */
+    gap: 2em; /* Gap between items */
+}
+
+.background, .besties, .family, .aspirations {
+    flex: 1 1 10%; /* Flex-grow, flex-shrink, and flex-basis for the columns */
+    background: #3a3a3a; /* Darker background color for the columns */
+    padding: 0 2em; /* Padding for the columns */
+    border-radius: 1em; /* Rounded corners */
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.1); /* Box shadow for the columns */
+}
+
+.family-img {
+    width: 10vw; /* Width for the family images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1em; /* Margin at the top */
+    border-radius: 1em; /* Rounded corners */
+}
+
+/* Education Page */
+.education-section {
+    max-width: 100%; /* Maximum width for the section */
+    margin: 0 auto; /* Center the section */
+    padding: 1em 1em; /* Padding for the section */
+    background-color: #333; /* Slightly lighter background color */
+    border-radius: 1em; /* Rounded corners */
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.5); /* Box shadow for the section */
+}
+
+.education-content {
+    display: flex; /* Flexbox layout for the content */
+    flex-wrap: wrap; /* Wrap items to the next line */
+    gap: 2em; /* Gap between items */
+    justify-content: space-between; /* Space between items */
+}
+
+.education-item {
+    flex: 1 1 calc(33.333%); /* Flex-grow, flex-shrink, and flex-basis for the items */
+    background: #3a3a3a; /* Darker background color for the items */
+    padding: 0 2em; /* Padding for the items */
+    border-radius: 1em; /* Rounded corners */
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.3); /* Box shadow for the items */
+}
+
+.education-img {
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 10em; /* Maximum height for the images */
+    margin: 1em 0; /* Margin at the top and bottom */
+    border-radius: 1em; /* Rounded corners */
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.2); /* Box shadow for the images */
+}
+
+.education-item a {
+    color: #9acd32; /* Greenish color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hobbies Page */
+.hobbies-section1, #hobbies-section2 {
+    display: flex; /* Flexbox layout for the sections */
+    flex-wrap: wrap; /* Wrap items to the next line */
+    justify-content: center; /* Center-align items */
+    gap: 2em; /* Gap between items */
+}
+
+.box {
+    flex: 1 1 100%; /* Flex-grow, flex-shrink, and flex-basis for the boxes */
+    padding-left: 1em; /* Padding on the left */
+    border-radius: 1em; /* Rounded corners */
+    background-color: #3a3a3a; /* Darker background color for the boxes */
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.1); /* Box shadow for the boxes */
+}
+
+.gaming {
+    flex: 1 1 25%; /* Flex-grow, flex-shrink, and flex-basis for the gaming box */
+}
+
+#hobbies-section2 {
+    width: 43%; /* Width for the section */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.bowling {
+    flex: 1 1 25%; /* Flex-grow, flex-shrink, and flex-basis for the bowling box */
+}
+
+.hobby-img {
+    width: 10vw; /* Width for the hobby images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 0; /* No margin at the top */
+    border-radius: 1em; /* Rounded corners */
+}
+
+.gaming a {
+    color: #9acd32; /* Greenish color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    header {
+        padding: 1em 0; /* Padding for the header */
+    }
+
+    header h1 {
+        font-size: 2em; /* Font size for the main heading */
+    }
+
+    section {
+        padding: 1em; /* Padding for the section */
+    }
+
+    .topnav {
+        flex-direction: column; /* Vertical layout for the navigation */
+    }
+
+    .topnav a {
+        width: auto; /* Auto width for the links */
+        text-align: left; /* Left-align text in the links */
+    }
+
+    .about-section {
+        max-width: 100%; /* Maximum width for the section */
+    }
+
+    .about-content {
+        display: grid; /* Grid layout for the content */
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .family-img {
+        width: 45%; /* Width for the family images */
+    }
+
+    .intro-content {
+        max-width: 70%; /* Maximum width for the content */
+    }
+
+    .gaming {
+        width: 50%; /* Width for the gaming box */
+        height: 30em; /* Height for the gaming box */
+    }
+
+    #hobbies-section2 {
+        width: 50%; /* Width for the section */
+    }
+
+    .education-content {
+        flex-wrap: wrap; /* Wrap items in a row */
+    }
+
+    .education-item {
+        flex: 1 1 calc(50% - 1em); /* Two items per row */
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .topnav {
+        flex-direction: column; /* Vertical layout for the navigation */
+    }
+
+    .topnav a {
+        text-align: center; /* Center-align text in the links */
+        width: auto; /* Auto width for the links */
+    }
+
+    .about-content {
+        display: flex; /* Flexbox layout for the content */
+        flex-direction: column; /* Vertical layout */
+    }
+
+    .family-img {
+        width: 100%; /* Full width for the family images */
+    }
+
+    .intro-content {
+        max-width: 80%; /* Maximum width for the content */
+    }
+
+    .hobbies-section1, #hobbies-section2, .gaming, .bowling {
+        width: 100%; /* Full width for the sections and boxes */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .education-content {
+        flex-direction: column; /* Vertical layout for the content */
+    }
+
+    .education-item {
+        max-width: 100%; /* Full width for the items */
+    }
+}
